@@ -120,7 +120,7 @@ There are a few options here:
 
 If you're on a Mac, everything _should_ work just as it does on Linux, including the same libraries, although this has not been tested by us.
 
-## How to submit a solution
+## How to submit your solution
 
 Send __only__ the `main.cpp` file to [malcolm.vigren@sick.se](mailto:malcolm.vigren@sick.se). Use the subject line "Code Challenge Solution". Write your contact details as a comment in the code:
 
@@ -129,6 +129,8 @@ Send __only__ the `main.cpp` file to [malcolm.vigren@sick.se](mailto:malcolm.vig
 // Email: myemail@example.com
 // Phone number (optional): 07xxxxxxxx
 ```
+
+__Submit your solution at the latest by January 9:th 2023.__
 
 If you have any questions, send them to [malcolm.vigren@sick.se](mailto:malcolm.vigren@sick.se) with the subject line "Code Challenge Question". You can also create an issue in this repository if you run into any issues (try not to post any hints about the solution if you do so).
 
