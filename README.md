@@ -1,8 +1,8 @@
 # SICK Coding Challenge
 
 Welcome to this coding challenge! This repository contains all the necessary code and instructions
-to enter the competition, where you can win a gift card worth 1000 SEK and increase your
-chances of getting picked when applying for a summer job at SICK Linköping. Please read through
+to enter the competition, where you as a student can win a gift card worth 1000 SEK and increase your
+chances of getting picked when applying for a [summer job at SICK Linköping](https://career.sicklinkoping.se/student#page-block-65246). Please read through
 this README before entering, to make sure you understand the task at hand. __Good luck and have fun!__
 
 ## Task
@@ -37,7 +37,8 @@ __The correct solution which executes the fastest on the evaluation machine wins
 ### Prizes
 
 The winner will recieve a gift card worth 1000 SEK at [Dustin Home](https://www.dustinhome.se/).
-The people who submit the 2:nd to 5:th best solutions will recieve a smaller prize.
+The people who submit the 2:nd to 5:th best solutions will recieve a smaller prize. Note that __only university students__ are eligible to win prizes, but
+you are still welcome to try to solve the challenge anyway for fun.
 
 __Everyone who submits a correct solution will have a greater chance at getting a summer job at SICK Linköping should they apply for one, especially if it's one of the winning solutions__.
 
