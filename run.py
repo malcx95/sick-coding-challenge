@@ -25,7 +25,7 @@ def write_png(image, filename):
 
 def compile_code():
     subprocess.check_output(
-        ["g++", "main.cpp", "-O3", "-o", "main"]
+        ["g++", "main.cpp", "-std=c++17", "-O3", "-o", "main"]
     )
 
 

@@ -99,7 +99,7 @@ Writing incorrect pixel image (the color of each pixel indicates which color cha
 Saved image to incorrect_pixels.png
 ```
 
-The script converts the sample image `lena.png` into a raw image buffer file `lena_buf.dat`, which is the file to be read by the C++ code. Next, it compiles your code using `g++ main.cpp -O3 -o main`, before it runs the code. It then extracts how long it took and saves the image to the PNG file `lena_processed.png`. Next, it reads the ground truth image (can be seen in `ground_truth.png`) and compares the processed image against it. Here, since you have not implemented the solution yet, it says the images don't match up, and writes an error image. When a correct solution is implemented, this will be printed to the screen:
+The script converts the sample image `lena.png` into a raw image buffer file `lena_buf.dat`, which is the file to be read by the C++ code. Next, it compiles your code using `g++ main.cpp -std=c++17 -O3 -o main`, before it runs the code. It then extracts how long it took and saves the image to the PNG file `lena_processed.png`. Next, it reads the ground truth image (can be seen in `ground_truth.png`) and compares the processed image against it. Here, since you have not implemented the solution yet, it says the images don't match up, and writes an error image. When a correct solution is implemented, this will be printed to the screen:
 
 ```
 Compiling...
