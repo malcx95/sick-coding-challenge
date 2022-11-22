@@ -7,7 +7,7 @@ this README before entering, to make sure you understand the task at hand. __Goo
 
 ## Task
 
-Your task is to implement a special image filter in C++, which given an image and a radius ksize performs the following operation:
+Your task is to implement a special image filter in C++, which given an image and a radius `ksize` performs the following operation:
 
 - For each pixel `p` in the image, consider a square region `R` around the pixel which is
     `2*ksize + 1` wide and high:
