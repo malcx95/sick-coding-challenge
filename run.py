@@ -4,7 +4,7 @@ import imageio.v2 as imageio
 import subprocess
 
 
-IMAGE_PATH = "./lena.png"
+IMAGE_PATH = "./baboon.png"
 
 
 def convert_image(image, output_name):
@@ -43,9 +43,9 @@ def run_code():
 def main():
     image = imageio.imread(IMAGE_PATH)
     height, width, _ = image.shape
-    if not os.path.isfile("lena_buf.dat"):
+    if not os.path.isfile("baboon_buf.dat"):
         print("Converting image to buffer...")
-        convert_image(image, "lena_buf.dat")
+        convert_image(image, "baboon_buf.dat")
 
     print("Compiling...")
     try:
@@ -64,10 +64,10 @@ def main():
 
     print(f"Execution took {seconds} seconds.")
 
-    converted_image = read_image("lena_processed.dat", height, width)
+    converted_image = read_image("baboon_processed.dat", height, width)
     ground_truth = read_image("ground_truth.dat", height, width)
 
-    write_png(converted_image, "lena_processed.png")
+    write_png(converted_image, "baboon_processed.png")
 
     images_match = np.all(ground_truth == converted_image)
     if images_match:

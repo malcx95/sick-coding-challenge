@@ -28,7 +28,7 @@ to the left and a `ksize` of 23, the image below to the right shows the result o
 
 Before                     |  After
 :-------------------------:|:-------------------------:
-![](lena.png "Before")     |  ![](ground_truth.png "After")
+![](baboon.png "Before")   |  ![](ground_truth.png "After")
 
 ## How do I win?
 
@@ -93,19 +93,19 @@ In order to test your solution, install [Python](https://www.python.org/) (versi
 Compiling...
 Running...
 Execution took 3.9e-05 seconds.
-Saved image to lena_processed.png
+Saved image to baboon_processed.png
 Images don't quite match up.
 Writing incorrect pixel image (the color of each pixel indicates which color channel is incorrect, black means correct)
 Saved image to incorrect_pixels.png
 ```
 
-The script converts the sample image `lena.png` into a raw image buffer file `lena_buf.dat`, which is the file to be read by the C++ code. Next, it compiles your code using `g++ main.cpp -std=c++17 -O3 -o main`, before it runs the code. It then extracts how long it took and saves the image to the PNG file `lena_processed.png`. Next, it reads the ground truth image (can be seen in `ground_truth.png`) and compares the processed image against it. Here, since you have not implemented the solution yet, it says the images don't match up, and writes an error image. When a correct solution is implemented, this will be printed to the screen:
+The script converts the sample image `baboon.png` into a raw image buffer file `baboon_buf.dat`, which is the file to be read by the C++ code. Next, it compiles your code using `g++ main.cpp -std=c++17 -O3 -o main`, before it runs the code. It then extracts how long it took and saves the image to the PNG file `baboon_processed.png`. Next, it reads the ground truth image (can be seen in `ground_truth.png`) and compares the processed image against it. Here, since you have not implemented the solution yet, it says the images don't match up, and writes an error image. When a correct solution is implemented, this will be printed to the screen:
 
 ```
 Compiling...
 Running...
 Execution took 3.795093 seconds.
-Saved image to lena_processed.png
+Saved image to baboon_processed.png
 Solution is correct! Image matches with ground truth!
 ```
 

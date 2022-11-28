@@ -20,14 +20,14 @@ int main(int argc, char** argv)
     unsigned char input_image[HEIGHT*WIDTH*3];
     unsigned char output_image[HEIGHT*WIDTH*3];
 
-    std::fstream fin("lena_buf.dat", std::ios::in | std::ios::binary);
+    std::fstream fin("baboon_buf.dat", std::ios::in | std::ios::binary);
     fin.read((char*)input_image, HEIGHT*WIDTH*3);
 
     auto start = std::chrono::high_resolution_clock::now();
     perform_operation(input_image, output_image, 23);
     auto end = std::chrono::high_resolution_clock::now();
 
-    std::fstream fout("lena_processed.dat", std::ios::out | std::ios::binary);
+    std::fstream fout("baboon_processed.dat", std::ios::out | std::ios::binary);
     fout.write((char*)output_image, HEIGHT*WIDTH*3);
 
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
