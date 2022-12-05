@@ -24,7 +24,7 @@ The region `R` is illustrated below, for when `ksize = 3`:
 ![](region.png "The region R")
 
 __The focus of the task is to implement this as efficiently as possible__. Given the image below
-to the left and a `ksize` of 23, the image below to the right shows the result of the operation :
+to the left and a `ksize` of 23, the image below to the right shows the result of the operation:
 
 Before                     |  After
 :-------------------------:|:-------------------------:
@@ -108,6 +108,11 @@ Execution took 3.795093 seconds.
 Saved image to baboon_processed.png
 Solution is correct! Image matches with ground truth!
 ```
+
+### Note: If you have cloned an early version of this repository
+
+If you were early in cloning this repository, you may have noticed we changed the ground truth image. If you want to run on this new image, you need to pull all the
+new changes (be careful to not overwrite your changes in `main.cpp`) and in your `main.cpp` file replace all occurences of "lena" with "baboon". Furthermore, it is a good idea to remove the .dat files (except `ground_truth.dat`).
 
 ## What if I don't have Linux?
 
