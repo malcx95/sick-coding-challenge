@@ -45,7 +45,7 @@ __Everyone who submits a correct solution will have a greater chance at getting 
 
 ## Rules and constraints
 
-The code is to be written in C++ using the provided template `main.cpp`.
+The code is to be written in C++ (C++ 2017) using the provided template `main.cpp`.
 In here, you will find the following function:
 
 ```cpp
