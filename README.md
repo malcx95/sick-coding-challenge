@@ -1,5 +1,7 @@
 # SICK Coding Challenge
 
+__UPDATE 2022-12-19: Does your solution work on the old image but not the new one? See the last section of this README.__
+
 Welcome to this coding challenge! This repository contains all the necessary code and instructions
 to enter the competition, where you as a student can win a gift card worth 1000 SEK and increase your
 chances of getting picked when applying for a [summer job at SICK Linköping](https://career.sicklinkoping.se/student#page-block-65246). Please read through
@@ -141,3 +143,19 @@ If you have any questions, send them to [malcolm.vigren@sick.se](mailto:malcolm.
 
 __Good luck and have fun!__
 
+## My solution works on the old image but not the new one, what should I do?
+
+Some people who started working on the challenge early may have noticed that we changed the image on which to run the filter to a different one.
+This has apparently caused some issues for a few people, who reported that their solution worked on the old image but not the new one, but when
+they submitted their solution it worked on our end on the new image. If you want it to work on the baboon image, you can try:
+
+1. Change the input and output file names in the `main.cpp` file from `lena_buf.dat` and `lena_processed.dat` to `baboon_buf.dat` and `baboon_processed.dat`:
+```C++
+  std::fstream fin("baboon_buf.dat", std::ios::in | std::ios::binary);
+  ...
+  std::fstream fout("baboon_processed.dat", std::ios::out | std::ios::binary);
+```
+2. Either remove all files untracked by git in the repository or clone a fresh copy of the repository and move your `main.cpp` file there.
+
+If this still doesn't work (which could be due to some platform-dependent undefined behavior), I would suggest you submit your solution anyway.
+As long as the solution still works on the old image and you have not hard-coded any image values anywhere it should work on the new image as well.
