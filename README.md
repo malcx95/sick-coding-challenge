@@ -1,6 +1,6 @@
 # SICK Coding Challenge
 
-__UPDATE 2022-12-19: Does your solution work on the old image but not the new one? See the last section of this README.__
+__UPDATE 2022-12-20: Does your solution work on the old image but not the new one? A solution has been found, see the last section of this README.__
 
 Welcome to this coding challenge! This repository contains all the necessary code and instructions
 to enter the competition, where you as a student can win a gift card worth 1000 SEK and increase your
@@ -152,5 +152,10 @@ they submitted their solution it worked on our end on the new image. If you want
 ```
 2. Either remove all files untracked by git in the repository or clone a fresh copy of the repository and move your `main.cpp` file there.
 
-If this still doesn't work (which could be due to some platform-dependent undefined behavior), I would suggest you submit your solution anyway.
+It was discovered that there seems to be a difference in how `imageio` reads the baboon image on
+our computers compared to other peoples computers, causing a different `baboon_buf.dat` file to be created. Therefore, we have now provided the
+`baboon_buf.dat` file as a part of this git repository. If you just clone a fresh copy of the repository or pull the repository, replacing any
+old `baboon_buf.dat` file which may have been generated, put your `main.cpp` in there (with the correct image names), it should now work.
+
+If this still doesn't work, (which could be due to some platform-dependent undefined behavior), I would suggest you submit your solution anyway.
 As long as the solution still works on the old image and you have not hard-coded any image values anywhere it should work on the new image as well.
