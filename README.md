@@ -1,6 +1,6 @@
 # SICK Coding Challenge
 
-__UPDATE 2022-12-20: Does your solution work on the old image but not the new one? A solution has been found, see the last section of this README.__
+__IMPORTANT: Does your solution work on the old image but not the new one? Or do you have problems with getting the solution to work? It turns out there was a problem in the generation of the buffer image, please pull the latest changes and your solution might now work. See the last section of this README for details.__
 
 Welcome to this coding challenge! This repository contains all the necessary code and instructions
 to enter the competition, where you as a student can win a gift card worth 1000 SEK and increase your
@@ -138,24 +138,14 @@ If you have any questions, send them to [malcolm.vigren@sick.se](mailto:malcolm.
 
 __Good luck and have fun!__
 
-## My solution works on the old image but not the new one, what should I do?
+## My solution does not work on the baboon image, what should I do?
 
-Some people who started working on the challenge early may have noticed that we changed the image on which to run the filter to a different one.
-This has apparently caused some issues for a few people, who reported that their solution worked on the old image but not the new one, but when
-they submitted their solution it worked on our end on the new image. If you want it to work on the baboon image, you can try:
-
-1. Change the input and output file names in the `main.cpp` file from `lena_buf.dat` and `lena_processed.dat` to `baboon_buf.dat` and `baboon_processed.dat`:
-```C++
-  std::fstream fin("baboon_buf.dat", std::ios::in | std::ios::binary);
-  ...
-  std::fstream fout("baboon_processed.dat", std::ios::out | std::ios::binary);
-```
-2. Either remove all files untracked by git in the repository or clone a fresh copy of the repository and move your `main.cpp` file there.
-
-It was discovered that there seems to be a difference in how `imageio` reads the baboon image on
+If you cloned the repository before __2022-12-21__, then you might have problems running on the baboon image. You will get an image which looks close
+to the ground truth, but with subtle differences, causing the `run.py` script to say it is incorrect.
+It was discovered that the cause of this seems to be a difference in how `imageio` reads the baboon image on
 our computers compared to other peoples computers, causing a different `baboon_buf.dat` file to be created. Therefore, we have now provided the
 `baboon_buf.dat` file as a part of this git repository. If you just clone a fresh copy of the repository or pull the repository, replacing any
-old `baboon_buf.dat` file which may have been generated, put your `main.cpp` in there (with the correct image names), it should now work.
+old `baboon_buf.dat` file which may have been generated, put your `main.cpp` in there, it should now work. You can also
+comment out the section of `run.py` which creates the `baboon_buf.dat` (it shouldn't overwrite it as long as a file with that name exists though).
 
-If this still doesn't work, (which could be due to some platform-dependent undefined behavior), I would suggest you submit your solution anyway.
-As long as the solution still works on the old image and you have not hard-coded any image values anywhere it should work on the new image as well.
+If you previously ran on the `lena` image, make sure you change the `"lena_buf.dat"` and `"lena_processed.dat"` strings in your `main.cpp` with `"baboon_buf.dat"` and `"baboon_processed.dat"`. 
