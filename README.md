@@ -134,7 +134,7 @@ Send __only__ the `main.cpp` file to [malcolm.vigren@sick.se](mailto:malcolm.vig
 
 __Submit your solution at the latest by January 9:th 2023.__
 
-If you have any questions, send them to [andreas.oberg@sick.se](mailto:andreas.oberg@sick.se) or [emma.lowbeer@sick.se](mailto:emma.lowbeer@sick.se) with the subject line "Code Challenge Question".
+If you have any questions, send them to [malcolm.vigren@sick.se](mailto:malcolm.vigren@sick.se) with the subject line "Code Challenge Question".
 
 __Good luck and have fun!__
 
