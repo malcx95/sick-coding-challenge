@@ -1,6 +1,6 @@
 # SICK Coding Challenge
 
-__IMPORTANT: Does your solution work on the old image but not the new one? Or do you have problems with getting the solution to work? It turns out there was a problem in the generation of the buffer image, please pull the latest changes and your solution might now work. See the last section of this README for details.__
+__The competition is over! If you participated, you should have recieved an email with how you did on the competition. If you have not recieved the email, please contact me at [malcolm.vigren@sick.se](mailto:malcolm.vigren@sick.se).__
 
 Welcome to this coding challenge! This repository contains all the necessary code and instructions
 to enter the competition, where you as a student can win a gift card worth 1000 SEK and increase your
